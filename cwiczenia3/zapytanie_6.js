@@ -1,0 +1,27 @@
+printjson(db.people.insertOne(
+    {
+        "sex":"Male",
+        "first_name":"Tomasz",
+        "last_name":"Latała",
+        "job":"QA Automation Engineer",
+        "email":"s23864@pjwstk.edu.pl",
+        "location":
+            {
+                "city":"Warsaw",
+                "address":{
+			 "streetname":"Jasielska",
+			 "streetnumber":"48"
+			}
+            },
+        "description":"ABCD",
+        "height":"183.30",
+        "weight":"84.30",
+        "birth_date":"1995-04-19T03:12:44Z",
+        "nationality":"Poland",
+        "credit":[{
+            "type":"XYZ",
+            "number":"342535464564645645645654",
+            "currency":"PLN",
+            "balance":"105342.23"}]
+    }
+))

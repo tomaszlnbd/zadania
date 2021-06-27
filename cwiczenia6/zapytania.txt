@@ -1,0 +1,16 @@
+##### ZADANIE 1 
+MATCH p=shortestPath((d:town {name:'Darjeeling'})-[*]-(s:peak {name:'Sandakphu'})) RETURN p
+
+##### ZADANIE 2 
+MATCH p=shortestPath((d:town {name:'Darjeeling'})-[*]-(s:peak {name:'Sandakphu'}))
+WHERE ALL(x in relationships(p) WHERE x.winter= 'true') RETURN p
+
+##### ZADANIE 3 
+MATCH p=(d:town {name:'Darjeeling'})-[*]->(s:peak {name:'Sandakphu'})
+WITH reduce(distance=0, x IN relationships(p) | distance + x.distance) AS distance, p 
+ORDER BY distance ASC RETURN p, distance
+
+##### ZADANIE 4 
+MATCH (a:Airport)<-[:ORIGIN]-(f:Flight)
+WITH a, COUNT(f) AS f_cnt RETURN a, f_cnt
+ORDER BY f_cnt

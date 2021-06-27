@@ -1,0 +1,206 @@
+﻿[
+  {
+    "h": {
+"identity": 4,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Hugo Weaving",
+"born": 1960
+      }
+    },
+    "k": {
+"identity": 1,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Keanu Reeves",
+"born": 1964
+      }
+    },
+    "movies": {
+"identity": 10,
+"labels": [
+        "Movie"
+      ],
+"properties": {
+"tagline": "Everything that has a beginning has an end",
+"title": "The Matrix Revolutions",
+"released": 2003
+      }
+    },
+    "movies.title": "The Matrix Revolutions"
+  },
+  {
+    "h": {
+"identity": 4,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Hugo Weaving",
+"born": 1960
+      }
+    },
+    "k": {
+"identity": 1,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Keanu Reeves",
+"born": 1964
+      }
+    },
+    "movies": {
+"identity": 9,
+"labels": [
+        "Movie"
+      ],
+"properties": {
+"tagline": "Free your mind",
+"title": "The Matrix Reloaded",
+"released": 2003
+      }
+    },
+    "movies.title": "The Matrix Reloaded"
+  },
+  {
+    "h": {
+"identity": 4,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Hugo Weaving",
+"born": 1960
+      }
+    },
+    "k": {
+"identity": 1,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Keanu Reeves",
+"born": 1964
+      }
+    },
+    "movies": {
+"identity": 0,
+"labels": [
+        "Movie"
+      ],
+"properties": {
+"tagline": "Welcome to the Real World",
+"title": "The Matrix",
+"released": 1999
+      }
+    },
+    "movies.title": "The Matrix"
+  },
+  {
+    "h": {
+"identity": 1462,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Hugo Weaving",
+"born": 1960
+      }
+    },
+    "k": {
+"identity": 1459,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Keanu Reeves",
+"born": 1964
+      }
+    },
+    "movies": {
+"identity": 1458,
+"labels": [
+        "Movie"
+      ],
+"properties": {
+"tagline": "Welcome to the Real World",
+"title": "The Matrix",
+"released": 1999
+      }
+    },
+    "movies.title": "The Matrix"
+  },
+  {
+    "h": {
+"identity": 1462,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Hugo Weaving",
+"born": 1960
+      }
+    },
+    "k": {
+"identity": 1459,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Keanu Reeves",
+"born": 1964
+      }
+    },
+    "movies": {
+"identity": 1467,
+"labels": [
+        "Movie"
+      ],
+"properties": {
+"tagline": "Free your mind",
+"title": "The Matrix Reloaded",
+"released": 2003
+      }
+    },
+    "movies.title": "The Matrix Reloaded"
+  },
+  {
+    "h": {
+"identity": 1462,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Hugo Weaving",
+"born": 1960
+      }
+    },
+    "k": {
+"identity": 1459,
+"labels": [
+        "Person"
+      ],
+"properties": {
+"name": "Keanu Reeves",
+"born": 1964
+      }
+    },
+    "movies": {
+"identity": 1468,
+"labels": [
+        "Movie"
+      ],
+"properties": {
+"tagline": "Everything that has a beginning has an end",
+"title": "The Matrix Revolutions",
+"released": 2003
+      }
+    },
+    "movies.title": "The Matrix Revolutions"
+  }
+]
