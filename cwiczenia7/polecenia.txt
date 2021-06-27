@@ -1,0 +1,24 @@
+# 1.Umieść w bazie (nazwa bucketa ma być Twoim numerem indeksu poprzedzonym literą „s”) 5 wartości, gdzie każda z nich ma być dokumentem json mającym 4 pola co najmniej dwóch różnych typów. 
+curl -i -XPUT -H 'Content-Type: application/json' -d '{"name":"Robert", "surname": "Lewandowski", "goals": 23, "assists": 11}' http://localhost:8098/buckets/s23864/keys/lewandowski
+curl -i -XPUT -H 'Content-Type: application/json' -d '{"name":"Leo", "surname": "Messi", "goals": 34, "assists": 12}' http://localhost:8098/buckets/s23864/keys/messi
+curl -i -XPUT -H 'Content-Type: application/json' -d '{"name":"Cristiano", "surname": "Ronaldo", "goals": 21, "assists": 9}' http://localhost:8098/buckets/s23864/keys/ronaldo
+curl -i -XPUT -H 'Content-Type: application/json' -d '{"name":"Luiz", "surname": "Suarez", "goals": 15, "assists": 6}' http://localhost:8098/buckets/s23864/keys/suarez
+curl -i -XPUT -H 'Content-Type: application/json' -d '{"name":"Karim", "surname": "Benzema", "goals": 11, "assists": 18}' http://localhost:8098/buckets/s23864/keys/benzema
+# 2.Pobierz z bazy jedną z dodanych przez Ciebie wartości. 
+curl -i http://localhost:8098/buckets/s23864/keys/benzema
+# 3.Zmodyfikuj jedną z wartości – dodając dodatkowe pole do dokumentu. 
+curl -i -XPUT -H 'Content-Type: application/json' -d '{"name":"Robert", "surname": "Lewandowski", "goals": 23, "assists": 11, "shots": 124}' http://localhost:8098/buckets/s23864/keys/lewandowski
+# 4.Zmodyfikuj jedną z wartości – usuwając jedną pole z wybranego dokumentu. 
+curl -i -XPUT -H 'Content-Type: application/json' -d '{"name":"Robert", "surname": "Lewandowski", "goals": 23, "assists": 11}' http://localhost:8098/buckets/s23864/keys/lewandowski
+# 5.Zmodyfikuj jedną z wartości – zmieniając wartość jednego z pól.  
+curl -i -XPUT -H 'Content-Type: application/json' -d '{"name":"Robert", "surname": "Lewandowski", "goals": 24, "assists": 12}' http://localhost:8098/buckets/s23864/keys/lewandowski
+# 6.Usuń jeden z dokumentów z bazy. 
+curl -i -XDELETE http://localhost:8098/buckets/s23864/keys/suarez
+# 7.Spróbuj pobrać z bazy wartość, która nie istnieje w tej bazie. 
+curl -i http://localhost:8098/buckets/s23864/keys/suarez
+# 8.Dodaj do bazy 1 dokument json (zawierający 1 pole), ale nie specyfikuj klucza. 
+curl -i -XPOST -H 'Content-Type: application/json' -d '{"name":"Kante"}' http://localhost:8098/buckets/s23864/keys
+# 9.Pobierz z bazy element z zadania 8. 
+curl -i http://localhost:8098/buckets/s23864/keys/10UmaWIVj0qiytULCvT6ATQo3iS
+# 10.Usuń z bazy element z zadania 8.
+curl -i -XDELETE http://localhost:8098/buckets/s23864/keys/10UmaWIVj0qiytULCvT6ATQo3iS

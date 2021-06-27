@@ -1,0 +1,134 @@
+########## Zadanie 1
+$ curl -i -XPUT -H 'Content-Type: application/json' -d '{"name":"Robert", "surname": "Lewandowski", "goals": 23, "assists": 11}' http://localhost:8098/buckets/s23864/keys/lewandowski
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sun, 27 Jun 2021 18:31:29 GMT
+Content-Type: application/json
+Content-Length: 0
+
+$ curl -i -XPUT -H 'Content-Type: application/json' -d '{"name":"Leo", "surname": "Messi", "goals": 34, "assists": 12http://localhost:8098/buckets/s23864/keys/messi
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sun, 27 Jun 2021 18:32:20 GMT
+Content-Type: application/json
+Content-Length: 0
+
+$ curl -i -XPUT -H 'Content-Type: application/json' -d '{"name":"Cristiano", "surname": "Ronaldo", "goals": 21, "assi": 9}' http://localhost:8098/buckets/s23864/keys/ronaldo
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sun, 27 Jun 2021 18:32:38 GMT
+Content-Type: application/json
+Content-Length: 0
+
+$ curl -i -XPUT -H 'Content-Type: application/json' -d '{"name":"Luiz", "surname": "Suarez", "goals": 15, "assists":  http://localhost:8098/buckets/s23864/keys/suarez
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sun, 27 Jun 2021 18:32:51 GMT
+Content-Type: application/json
+Content-Length: 0
+
+$ curl -i -XPUT -H 'Content-Type: application/json' -d '{"name":"Karim", "surname": "Benzema", "goals": 11, "assists"8}' http://localhost:8098/buckets/s23864/keys/benzema
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sun, 27 Jun 2021 18:33:04 GMT
+Content-Type: application/json
+Content-Length: 0
+
+########## Zadanie 2
+$ curl -i http://localhost:8098/buckets/s23864/keys/benzema
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8J9gnVgrXyC2DCCUy5rEyJDj43uLLAgA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s23864>; rel="up"
+Last-Modified: Sun, 27 Jun 2021 18:33:04 GMT
+ETag: "6ViTQDz2p2OmMmtKPzkRXG"
+Date: Sun, 27 Jun 2021 18:33:31 GMT
+Content-Type: application/json
+Content-Length: 66
+
+{"name":"Karim", "surname": "Benzema", "goals": 11, "assists": 18}
+
+########## Zadanie 3
+$ curl -i -XPUT -H 'Content-Type: application/json' -d '{"name":"Robert", "surname": "Lewandowski", "goals": 23, "asss": 11, "shots": 124}' http://localhost:8098/buckets/s23864/keys/lewandowski
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sun, 27 Jun 2021 18:35:47 GMT
+Content-Type: application/json
+Content-Length: 0
+
+########## Zadanie 4
+$ curl -i -XPUT -H 'Content-Type: application/json' -d '{"name":"Robert", "surname": "Lewandowski", "goals": 23, "asss": 11}' http://localhost:8098/buckets/s23864/keys/lewandowski
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sun, 27 Jun 2021 18:36:22 GMT
+Content-Type: application/json
+Content-Length: 0
+
+########## Zadanie 5
+$ curl -i -XPUT -H 'Content-Type: application/json' -d '{"name":"Robert", "surname": "Lewandowski", "goals": 24, "asss": 12}' http://localhost:8098/buckets/s23864/keys/lewandowski
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sun, 27 Jun 2021 18:36:39 GMT
+Content-Type: application/json
+Content-Length: 0
+
+########## Zadanie 6
+$ curl -i -XDELETE http://localhost:8098/buckets/s23864/keys/suarez
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sun, 27 Jun 2021 18:38:34 GMT
+Content-Type: application/json
+Content-Length: 0
+
+########## Zadanie 7
+$ curl -i http://localhost:8098/buckets/s23864/keys/suarez
+HTTP/1.1 404 Object Not Found
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sun, 27 Jun 2021 18:39:12 GMT
+Content-Type: text/plain
+Content-Length: 10
+
+not found
+
+########## Zadanie 8
+$ curl -i -XPOST -H 'Content-Type: application/json' -d '{"name":"Kante"}' http://localhost:8098/buckets/s23864/keys
+HTTP/1.1 201 Created
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Location: /buckets/s23864/keys/10UmaWIVj0qiytULCvT6ATQo3iS
+Date: Sun, 27 Jun 2021 18:39:43 GMT
+Content-Type: application/json
+Content-Length: 0
+
+########## Zadanie 9
+$ curl -i http://localhost:8098/buckets/s23864/keys/10UmaWIVj0qiytULCvT6ATQo3iS
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8J9gnVgqX3RECspkzmBIZ81gZ3jv63uLLAgA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s23864>; rel="up"
+Last-Modified: Sun, 27 Jun 2021 18:39:43 GMT
+ETag: "7DOudBxqRdAq55LvLJ76Ay"
+Date: Sun, 27 Jun 2021 18:40:25 GMT
+Content-Type: application/json
+Content-Length: 16
+
+{"name":"Kante"}
+########## Zadanie 10
+$ curl -i -XDELETE http://localhost:8098/buckets/s23864/keys/10UmaWIVj0qiytULCvT6ATQo3iS
+HTTP/1.1 204 No Content
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Date: Sun, 27 Jun 2021 18:40:42 GMT
+Content-Type: application/json
+Content-Length: 0

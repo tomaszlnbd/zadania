@@ -1,0 +1,22 @@
+##### POST
+204
+
+##### GET
+Status code: 200
+Content: model=Giulia&HP=200&year=2019&price=100000
+
+##### PUT
+204
+
+##### GET
+Status code: 200
+Content: model=Giulia&HP=200&year=2019&price=80000
+
+##### DELETE
+204
+
+##### GET
+Status code: 404
+Content: not found
+
+Process finished with exit code 0
